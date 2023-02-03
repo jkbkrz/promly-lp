@@ -8,7 +8,12 @@
 
 }
 
-@media (max-width: 600px) {
+// ADJUST TO MOBILE DEVICES - Reduce padding / switch panels flex-direction to column / remove position: sticky to heading
+@media (max-width: 750px) {
+    .Panel {
+        padding: 17.5px !important;
+    }
+
     .Panels {
         flex-direction: column;
     }
@@ -44,12 +49,18 @@
         font-size: clamp(30px, 3.5vw, 50px);
     }
 
-    &__buttons>* {
-        display: inline-block;
-        margin-right: 10px;
+    &__buttons {
+        a {
+            display: inline-block;
+            margin-right: 10px;
+        }
 
         img {
             height: 50px;
+        }
+
+        &--disabled {
+            filter: brightness(50%)
         }
     }
 
