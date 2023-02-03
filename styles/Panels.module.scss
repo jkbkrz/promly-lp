@@ -1,0 +1,195 @@
+@use 'variables.module';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+.Panels {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+@media (max-width: 600px) {
+    .Panels {
+        flex-direction: column;
+    }
+
+    .Panel__heading {
+        position: static !important;
+    }
+
+    .Panel__features {
+        border-left: none !important;
+    }
+}
+
+.Panel {
+    padding: 25px;
+}
+
+.Panel__heading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 25px;
+    position: sticky;
+    top: variables.$nav-height;
+    height: variables.$panels-height;
+    max-height: 722px;
+
+    h1 {
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: clamp(30px, 3.5vw, 50px);
+    }
+
+    &__buttons>* {
+        display: inline-block;
+        margin-right: 10px;
+
+        img {
+            height: 50px;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        font-family: "Inter";
+
+        &__heading {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        &__description {
+            color: gray;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.Panel__features {
+    flex: 1;
+    border-left: 1px solid variables.$border-color;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Card {
+    max-width: 550px;
+    font-family: "Inter";
+    color: white;
+    border: 1px solid variables.$border-color;
+    display: flex;
+    flex-direction: column;
+    padding: variables.$card-padding;
+    border-radius: 20px;
+    align-items: flex-start;
+    gap: 12.5px;
+
+    &--no-padding {
+        padding: 0;
+    }
+
+    &--no-bottom-padding {
+        padding-bottom: 0 !important;
+    }
+
+    &__badge {
+        font-family: 'JetBrains Mono', monospace;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: variables.$main-color;
+        color: black;
+        padding: 2.5px 5px;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: variables.$card-title;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: variables.$card-subtitle;
+        color: variables.$text-color-dark;
+    }
+
+    &__phone {
+        margin-top: 30px;
+    }
+
+    &__logos {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+
+        &--text {
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: variables.$main-color-dark;
+            font-size: 12px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    &__row {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        height: 150px;
+
+        &--reverse {
+            margin-left: auto;
+            margin-right: 0;
+            border-bottom: 1px solid variables.$border-color;
+            border-top: 1px solid variables.$border-color;
+        }
+
+        &__image {
+            padding: variables.$card-padding;
+            border-right: 1px solid variables.$border-color;
+            height: 100%;
+            width: 175px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--reverse {
+                border-left: 1px solid variables.$border-color;
+                border-right: none;
+            }
+        }
+
+        &__content {
+            padding: 0 variables.$card-padding;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}
+
+
+.Copyright {
+    font-family: "Inter";
+    font-size: 13px;
+    opacity: 0.6;
+}
