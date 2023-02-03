@@ -94,8 +94,8 @@ export const FeaturesPanel = () => {
         </div>
 
         <span className={styles.Footer}>
-            <a href='#' style={{ marginRight: 10 }}>Kontakt</a>
-            <a href='#'>Polityka prywatności</a>
+            <a href='#' alt='Kontakt' style={{ marginRight: 10 }}>Kontakt</a>
+            <a href='#' alt='Polityka prywatności'>Polityka prywatności</a>
             <br />
             © 2021 - 2023 Promly - All Rights Reserved.
         </span>
