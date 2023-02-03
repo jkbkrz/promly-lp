@@ -11,8 +11,9 @@ export const HeadingPanel = () => {
             <a href='#' alt='Download Promly on iOS' >
                 <img src='app-store-badge.svg' alt='App Store' className={styles['Panel__heading__buttons--disabled']} />
             </a>
-            <span style={{ fontFamily: "Inter", color: 'rgba(255, 255, 255, 0.5)', fontSize: "0.7rem" }}>*Aplikacja na App Store obecnie nie jest dostępna</span>
+
         </div>
+        <span style={{ fontFamily: "Inter", color: 'rgba(255, 255, 255, 0.5)', fontSize: "0.7rem", marginTop: -20 }}>*Aplikacja na App Store obecnie nie jest dostępna</span>
         <div className={styles.Panel__heading__rating}>
             <Image src="star.svg" width={16} height={16} />
             <div>

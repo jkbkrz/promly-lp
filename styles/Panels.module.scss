@@ -50,10 +50,10 @@
     }
 
     &__buttons {
-        a {
-            display: inline-block;
-            margin-right: 10px;
-        }
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
 
         img {
             height: 50px;
