@@ -17,8 +17,8 @@ export default function Home() {
       <nav>
         <div className="row">
           <Image src="promly.svg" width={73} height={21} alt="Promly" />
-          <a href='#' alt="Kontakt" >Kontakt</a>
-          <a href='#' alt="Polityka prywatności" >Polityka prywatności</a>
+          <a href='#' alt="Kontakt" className='--disable-mobile'>Kontakt</a>
+          <a href='#' alt="Polityka prywatności" className='--disable-mobile'>Polityka prywatności</a>
         </div>
         <div className="row">
           <Image src="instagram.svg" width={16} height={16} alt="Promly Instagram" />

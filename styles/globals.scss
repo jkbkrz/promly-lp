@@ -64,3 +64,9 @@ nav {
 img {
   max-width: 100%;
 }
+
+@media (max-width: 750px) {
+  .--disable-mobile {
+    display: none;
+  }
+}

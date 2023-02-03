@@ -93,6 +93,11 @@ export const FeaturesPanel = () => {
             </h3>
         </div>
 
-        <span className={styles.Copyright}>© 2021 - 2023 Promly - All Rights Reserved.</span>
+        <span className={styles.Footer}>
+            <a href='#' style={{ marginRight: 10 }}>Kontakt</a>
+            <a href='#'>Polityka prywatności</a>
+            <br />
+            © 2021 - 2023 Promly - All Rights Reserved.
+        </span>
     </div>
 }
