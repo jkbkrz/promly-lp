@@ -10,19 +10,19 @@ export const FeaturesPanel = () => {
                 Otrzymuj powiadomienia o promocjach na bieżąco
             </h3>
             <h4 className={styles.Card__subtitle}>
-                Skanujemy setki stron dziennie najpopularniejszych sklepów, aby dostarczyć naszym użytkownikom wyłącznie promocje
+                Gdy tylko pojawią się nowe ciekawe promocje w aplikacji, otrzymasz o nich błyskawicznie powiadomienie
             </h4>
             <img src='phone.png' className={styles.Card__phone}></img>
         </div>
         <div className={styles.Card}>
             <div className={styles.Card__badge}>
-                Promocje
+                Dostępność
             </div>
             <h3 className={styles.Card__title}>
-                W Promly są tylko promocje
+                Popularne sklepy w Promly
             </h3>
             <h4 className={styles.Card__subtitle}>
-                Promly obsługuje największe sklepy z ubraniami w polskim internecie takie jak:
+                Promly obsługuje największe sklepy z odzieżą w polskim internecie takie jak:
             </h4>
             <div className={styles.Card__logos}>
                 <span>
@@ -49,20 +49,20 @@ export const FeaturesPanel = () => {
                 </div>
                 <div className={styles.Card__row__content}>
                     <h3 className={styles.Card__title}>
-                        W Promly są tylko promocje
+                        Wysoka selekcja ofert
                     </h3>
                     <h4 className={styles.Card__subtitle}>
-                        Promly obsługuje największe sklepy z ubraniami w polskim internecie takie jak:
+                        W trosce o jakość promocji w aplikacji, wszystkie produkty są analizowane i wybierane są te najbardziej okazyjne
                     </h4>
                 </div>
             </div>
             <div className={`${styles.Card__row} ${styles['Card__row--reverse']} $`}>
                 <div className={styles.Card__row__content}>
                     <h3 className={styles.Card__title}>
-                        W Promly są tylko promocje
+                        Promocje na bieżąco
                     </h3>
                     <h4 className={styles.Card__subtitle}>
-                        Promly obsługuje największe sklepy z ubraniami w polskim internecie takie jak:
+                        Wszystkie sklepy są codziennie skanowane, aby dostarczyć jak najbardziej świeże oferty
                     </h4>
                 </div>
                 <div className={`${styles.Card__row__image} ${styles['Card__row__image--reverse']}`}>
@@ -71,15 +71,15 @@ export const FeaturesPanel = () => {
             </div>
             <div className={`${styles.Card__row}`}>
                 <div className={styles.Card__row__image}>
-                    <img src='discount.svg' />
+                    <img src='globe.svg' />
                 </div>
                 {/* <img rc='discount.svg' className={styles.Card__row__image} /> */}
                 <div className={styles.Card__row__content}>
                     <h3 className={styles.Card__title}>
-                        W Promly są tylko promocje
+                        Streetwearowy styl
                     </h3>
                     <h4 className={styles.Card__subtitle}>
-                        Promly obsługuje największe sklepy z ubraniami w polskim internecie takie jak:
+                        W Promly znajdują się m.in. promocje odzieży w stylu streetwearowym
                     </h4>
                 </div>
             </div>
