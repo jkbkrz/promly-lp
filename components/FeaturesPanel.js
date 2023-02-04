@@ -1,4 +1,5 @@
 import styles from '@/styles/Panels.module.scss'
+import Link from 'next/link'
 
 export const FeaturesPanel = () => {
     return <div className={`${styles.Panel} ${styles.Panel__features}`}>
@@ -94,8 +95,12 @@ export const FeaturesPanel = () => {
         </div>
 
         <span className={styles.Footer}>
-            <a href='#' alt='Kontakt' style={{ marginRight: 10 }}>Kontakt</a>
-            <a href='#' alt='Polityka prywatności'>Polityka prywatności</a>
+            <Link href='/contact' alt='Kontakt' style={{ marginRight: 10 }}>
+                Kontakt
+            </Link>
+            <Link href='/contact' alt='Polityka prywatności' style={{ marginRight: 10 }}>
+                Polityka prywatności
+            </Link>
             <br />
             © 2021 - 2023 Promly - All Rights Reserved.
         </span>

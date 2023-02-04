@@ -14,24 +14,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
-        <div className="row">
-          <Image src="promly.svg" width={73} height={21} alt="Promly" />
-          <a href='#' alt="Kontakt" className='--disable-mobile'>Kontakt</a>
-          <a href='#' alt="Polityka prywatności" className='--disable-mobile'>Polityka prywatności</a>
-        </div>
-        <div className="row">
-          <Image src="instagram.svg" width={16} height={16} alt="Promly Instagram" />
-          <Image src="tiktok.svg" width={16} height={16} alt="Promly TikTok" />
-        </div>
-      </nav>
-      <main >
-        <Panels>
-          <HeadingPanel />
-          <FeaturesPanel />
-        </Panels>
 
-      </main>
+      <Panels>
+        <HeadingPanel />
+        <FeaturesPanel />
+      </Panels>
     </>
   )
 }
