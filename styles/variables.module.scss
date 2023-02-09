@@ -1,7 +1,7 @@
 $background-color: black;
 $text-color: white;
 $text-color-dark: #808080;
-$border-color: #3D3D3D;
+$border-color: #2b2b2b;
 $main-color: #FF4F00;
 $main-color-dark: #8f2d00;
 
@@ -10,6 +10,6 @@ $nav-height: 75px;
 $panels-height: calc(100vh - $nav-height);
 
 $card-padding: clamp(20px, 2vw, 35px);
-$card-title: clamp(15px, 1.3vw, 23px);
-$card-subtitle: clamp(13px, 1.2vw, 15px);
+$card-title: clamp(18px, 1.3vw, 23px);
+$card-subtitle: clamp(14px, 1.3vw, 15px);
 $card-icon: clamp(10px, 1.2vw, 15px);

@@ -94,6 +94,11 @@
 
 .Card {
     max-width: 550px;
+
+    @media (max-width: 750px) {
+        max-width: 100%;
+    }
+
     font-family: "Inter";
     color: white;
     border: 1px solid variables.$border-color;
@@ -178,7 +183,8 @@
             padding: variables.$card-padding;
             border-right: 1px solid variables.$border-color;
             height: 100%;
-            width: 175px;
+            min-width: 100px;
+            max-width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;

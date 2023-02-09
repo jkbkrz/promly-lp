@@ -23,7 +23,7 @@ export const FeaturesPanel = () => {
                 Popularne sklepy w Promly
             </h3>
             <h4 className={styles.Card__subtitle}>
-                Promly obsługuje największe sklepy z odzieżą w polskim internecie takie jak:
+                Promly obsługuje największe sklepy z odzieżą w polskim internecie, a m.in:
             </h4>
             <div className={styles.Card__logos}>
                 <span>
@@ -39,9 +39,9 @@ export const FeaturesPanel = () => {
                     <img src='ws2.svg' />
                 </span>
             </div>
-            <div className={styles['Card__logos--text']}>
+            {/* <div className={styles['Card__logos--text']}>
                 <span>+ Zalando, Nike, Adidas, Snipes, Asos, Eastend, Footshop, Zalando, WS2</span>
-            </div>
+            </div> */}
         </div>
         <div className={`${styles.Card} ${styles['Card--no-padding']}  ${styles.Card__column}`}>
             <div className={`${styles.Card__row}`}>
@@ -106,3 +106,4 @@ export const FeaturesPanel = () => {
         </span>
     </div>
 }
+
