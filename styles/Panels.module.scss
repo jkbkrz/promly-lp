@@ -46,7 +46,7 @@
     h1 {
         font-family: "Inter";
         font-weight: 400;
-        font-size: clamp(30px, 3.5vw, 50px);
+        font-size: clamp(35px, 3.5vw, 50px);
     }
 
     &__buttons {
@@ -149,6 +149,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         gap: 20px;
 
         &--text {
@@ -157,6 +158,10 @@
             font-weight: 500;
             color: variables.$main-color-dark;
             font-size: 12px;
+        }
+
+        img {
+            max-height: 25px;
         }
     }
 
@@ -167,14 +172,13 @@
     }
 
     &__row {
-        margin-left: 0;
         display: flex;
-        align-items: center;
-        height: 150px;
+        // align-items: center;
+        // height: 150px;
+        // display: grid;
+        // grid-template-columns: 1fr 3.5fr;
 
         &--reverse {
-            margin-left: auto;
-            margin-right: 0;
             border-bottom: 1px solid variables.$border-color;
             border-top: 1px solid variables.$border-color;
         }
@@ -182,24 +186,32 @@
         &__image {
             padding: variables.$card-padding;
             border-right: 1px solid variables.$border-color;
-            height: 100%;
-            min-width: 100px;
-            max-width: 150px;
+            // height: 100%;
+            width: 20%;
+            min-width: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            img {
+                // width: 100px;
+            }
+
             &--reverse {
                 border-left: 1px solid variables.$border-color;
                 border-right: none;
+
             }
         }
 
         &__content {
-            padding: 0 variables.$card-padding;
+            // padding: 0 variables.$card-padding;
             display: flex;
+            justify-content: center;
             flex-direction: column;
+            align-items: flex-start;
             gap: 8px;
+            padding: variables.$card-padding;
         }
     }
 }

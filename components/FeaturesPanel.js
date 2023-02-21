@@ -43,7 +43,7 @@ export const FeaturesPanel = () => {
                 <span>+ Zalando, Nike, Adidas, Snipes, Asos, Eastend, Footshop, Zalando, WS2</span>
             </div> */}
         </div>
-        <div className={`${styles.Card} ${styles['Card--no-padding']}  ${styles.Card__column}`}>
+        <div className={`${styles.Card}  ${styles['Card--no-padding']}  ${styles.Card__column}`}>
             <div className={`${styles.Card__row}`}>
                 <div className={styles.Card__row__image}>
                     <img src='selection.svg' />
